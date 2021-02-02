@@ -75,7 +75,6 @@ template_projects:
     - README.md
     - rtconfig.h
     - rtconfig.py
-    - rtconfig.pyc
     - rtconfig_preinc.h
     - SConscript
     - SConstruct
