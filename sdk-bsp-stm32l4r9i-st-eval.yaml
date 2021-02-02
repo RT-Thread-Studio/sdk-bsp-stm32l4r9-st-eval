@@ -1,0 +1,104 @@
+board:
+  buy_url_cn: https://www.st.com/en/evaluation-tools/stm32l4r9i-eval.html#sample-buy
+  buy_url_global: https://www.st.com/en/evaluation-tools/stm32l4r9i-eval.html#sample-buy
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: The STM32L4R9I-EVAL evaluation board is designed as a complete demonstration and development platform for STMicroelectronics Arm Cortex-M4 core-based STM32L4R9AI microcontroller
+  description_zh: STM32L4R9I-EVAL评估板是为意法半导体Arm Cortex-M4内核的STM32L4R9AI微控制器设计的完整的演示和开发平台
+  emulator_machine: ''
+  large_image: documents/images/stm32l4r9aievalboard_large.jpg
+  name: STM32L4R9I-ST-EVAL
+  price_cn: 2063 CNY
+  price_global: 320.0 USD
+  sale_contact_cn: https://www.st.com/content/st_com/en/contact-us.html
+  sale_contact_global: https://www.st.com/content/st_com/en/contact-us.html
+  small_image: documents/images/temp.png
+  vendor: RealThread
+  version: 1.0.0
+chip:
+  chip_name: STM32L4R9AIIx
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32L4
+  source_freq: '8000000'
+  sub_series_name: STM32L4R9
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/UM2248.pdf
+  title: UM2248
+- category: sheet
+  file: documents/DB3310.pdf
+  title: Datasheet
+example_projects: []
+features:
+- TFT color LCD 4"3 (480 x 272 pixels) resistive touch screen
+- ST MEMS digital microphone (MP34DT01TR)
+- 16 Mbit (1M x 16 bits) SDRAM
+- 128 Mbit (8M x 16 bits) NOR Flash
+- 512 Mbit Octo-SPI Flash memory device with double transfer rate (DTR)
+- Motor control connector
+- Seven LEDs
+- Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver
+- Joystick with 4-direction control and selector
+features_zh:
+- TFT彩色液晶4英寸 (480 x 272像素)电阻触摸屏
+- ST MEMS 数字麦克风 (MP34DT01TR)
+- 16 Mbit (1M x 16 bits) SDRAM
+- 128 Mbit (8M x 16 bits) NOR Flash
+- 512 Mbit Octo-SPI Flash memory device with double transfer rate (DTR)
+- 电机控制连接器
+- 7 个 LED
+- 多通道音频编解码器(WM8994) 4 DAC集成D/AB类扬声器驱动
+- 带有四个方向控制和选择器的操纵杆
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig.pyc
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: sdk-bsp-stm32l4r9-st-eval
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
